@@ -1,0 +1,23 @@
+.grid {
+  display: grid;
+  grid-template-columns: minmax(1rem, 1fr) minmax(min-content, 70rem) minmax(
+      1rem,
+      1fr
+    );
+  grid-template-rows: min-content 1fr;
+  min-height: 100vh;
+
+  & > * {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: subgrid;
+  }
+
+  & > * > * {
+    grid-column: 2/3;
+  }
+}
+
+// .container {
+//   grid-column: 2/3;
+// }

@@ -1,0 +1,59 @@
+@import "https://unpkg.com/leaflet@1.7.1/dist/leaflet.css";
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+@import url("./styles/grid.scss");
+
+:root {
+  --clr-body-dark: hsl(207, 26%, 17%);
+  --clr-bg-dark: hsl(209, 23%, 22%);
+  --clr-text-light: hsl(200, 15%, 8%);
+  --clr-input-light: hsl(0, 0%, 52%);
+  --clr-bg-light: #fff;
+  --clr-text-dark: hsl(0, 0%, 100%);
+  --clr-white: #fff;
+  --clr-error: rgb(244, 67, 54);
+
+  --bs: 0px 0px 5px 2px rgba(0, 0, 0, 0.09);
+
+  --fs-50: 0.8rem;
+  --fs-100: 1rem;
+  --fs-200: 1.15rem;
+  --fs-300: 1.5rem;
+  --fw-300: 300;
+  --fw-600: 600;
+  --fw-800: 800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: var(--fs-100);
+  font-family: "Nunito Sans", serif;
+  color: var(--clr-text);
+  background-color: var(--clr-bg-main);
+}
+
+.theme-light {
+  --clr-text: var(--clr-text-light);
+  --clr-bg: var(--clr-bg-light);
+  --clr-bg-main: var(--clr-white);
+  --clr-accent: var(--clr-bg-dark);
+  --clr-accent-text: var(--clr-text-dark);
+}
+
+.theme-dark {
+  --clr-text: var(--clr-text-dark);
+  --clr-bg: var(--clr-bg-dark);
+  --clr-bg-main: var(--clr-body-dark);
+  --clr-accent: var(--clr-bg-light);
+  --clr-accent-text: var(--clr-text-light);
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}

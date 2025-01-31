@@ -1,0 +1,25 @@
+.search {
+  --clr: #999;
+  position: relative;
+
+  &__input {
+    padding: 1rem 4rem;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: var(--bs);
+    font-family: inherit;
+    background-color: var(--clr-bg);
+    color: var(--clr-text);
+    &::placeholder {
+      color: #999;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    left: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--clr);
+  }
+}

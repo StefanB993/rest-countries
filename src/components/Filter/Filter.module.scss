@@ -1,0 +1,33 @@
+.filter {
+  position: relative;
+  &__btn {
+    background: var(--clr-bg);
+    box-shadow: var(--bs);
+    border: none;
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 1rem;
+
+    font-family: inherit;
+    font-weight: var(--fw-600);
+    font-size: var(--fs-200);
+    color: var(--clr-text);
+    cursor: pointer;
+  }
+
+  &__list {
+    position: absolute;
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+    list-style: none;
+    background-color: var(--clr-bg);
+    box-shadow: var(--bs);
+    padding: 1rem;
+
+    li {
+      cursor: pointer;
+    }
+  }
+}

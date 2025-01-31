@@ -1,0 +1,22 @@
+.homepage {
+  grid-template-rows: min-content 1fr;
+  padding: 3rem 0;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    @media (width < 30em) {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-rows: min-content min-content;
+    gap: 3rem;
+    justify-items: center;
+  }
+}

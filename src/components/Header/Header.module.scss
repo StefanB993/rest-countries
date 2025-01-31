@@ -1,0 +1,10 @@
+.header {
+  padding: 1rem 0;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+  background-color: var(--clr-bg);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}

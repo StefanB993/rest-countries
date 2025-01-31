@@ -1,0 +1,43 @@
+.country {
+  grid-template-rows: min-content min-content 1fr;
+  padding: 3rem 0;
+  gap: 3rem;
+
+  button {
+    justify-self: start;
+  }
+
+  &__container {
+    --col: 2;
+    display: grid;
+    grid-template-columns: repeat(var(--col), 1fr);
+
+    gap: 3rem;
+
+    @media (width < 40em) {
+      --col: 1;
+      grid-template-rows: 20rem min-content;
+    }
+  }
+
+  &__details {
+    display: grid;
+    gap: 2rem;
+  }
+
+  &__infos {
+    display: grid;
+    gap: 1rem;
+  }
+
+  &__info {
+    font-weight: var(--fw-800);
+  }
+
+  &__flag {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: var(--bs);
+  }
+}

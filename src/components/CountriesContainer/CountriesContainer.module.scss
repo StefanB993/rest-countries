@@ -1,0 +1,43 @@
+.countries {
+  --col: 4;
+
+  display: grid;
+  grid-template-columns: repeat(var(--col), 1fr);
+  align-content: start;
+  gap: 3rem;
+  margin-top: 3rem;
+
+  @media (width < 50em) {
+    --col: 2;
+  }
+}
+
+.country {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: var(--bs);
+  &__header {
+    height: 10rem;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__body {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--clr-bg);
+
+    span {
+      font-weight: var(--fw-600);
+    }
+  }
+
+  &__name {
+    font-size: var(--fs-200);
+  }
+}

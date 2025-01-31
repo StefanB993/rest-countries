@@ -1,0 +1,12 @@
+.toggle-btn {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+
+  font-size: var(--fs-100);
+  font-weight: var(--fw-300);
+  font-family: inherit;
+  color: inherit;
+}

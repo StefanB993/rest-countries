@@ -1,0 +1,12 @@
+.error {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  align-self: center;
+  justify-self: center;
+  font-size: var(--fs-300);
+
+  &__icon {
+    color: var(--clr-error);
+  }
+}
